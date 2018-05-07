@@ -1,0 +1,7 @@
+/target/
+/coverage/
+/node_modules/
+/.idea/
+/dist/
+/.project
+/.sonar

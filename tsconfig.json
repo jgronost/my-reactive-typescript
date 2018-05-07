@@ -1,0 +1,18 @@
+{
+  "version": "1.6.0",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "lib": ["DOM", "ES5"]
+  }
+}
