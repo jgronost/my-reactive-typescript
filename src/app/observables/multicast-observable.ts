@@ -1,4 +1,7 @@
-import {Observable, Subject} from "rxjs";
+import {Observable} from "rxjs/Observable";
+import {Subject} from "rxjs/Subject";
+import 'rxjs/add/observable/from';
+import 'rxjs/add/operator/multicast';
 
 function myMulticastObservable() {
     let source = Observable.from([1, 2, 3]);

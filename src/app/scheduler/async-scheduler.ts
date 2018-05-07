@@ -1,4 +1,5 @@
-import {Scheduler, Observable} from "rxjs";
+import {Observable} from "rxjs/Observable";
+import {Scheduler} from "rxjs/Rx";
 import 'rxjs/add/operator/observeOn'
 
 function myAsyncScheduler() {

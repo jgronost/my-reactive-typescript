@@ -1,4 +1,5 @@
-import {Observable} from "rxjs";
+import {Observable} from "rxjs/Observable";
+import 'rxjs/add/observable/from';
 
 function multiplyByTen(input) {
     let output = Observable.create(function subscribe(observer) {

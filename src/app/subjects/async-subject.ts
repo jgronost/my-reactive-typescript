@@ -1,4 +1,4 @@
-import {AsyncSubject} from "rxjs";
+import {AsyncSubject} from "rxjs/AsyncSubject";
 
 function myAsyncSubject() {
 
