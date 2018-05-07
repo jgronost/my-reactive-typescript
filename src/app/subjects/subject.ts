@@ -1,4 +1,4 @@
-import {Subject} from "rxjs/index";
+import {Subject} from "rxjs";
 
 function mySubject() {
 

@@ -1,4 +1,4 @@
-import {BehaviorSubject} from "rxjs/index";
+import {BehaviorSubject} from "rxjs";
 
 function myBehaviourSubject() {
 

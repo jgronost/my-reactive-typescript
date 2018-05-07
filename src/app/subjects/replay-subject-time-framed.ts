@@ -1,4 +1,4 @@
-import {ReplaySubject} from "rxjs/index";
+import {ReplaySubject} from "rxjs";
 
 function myReplaySubjectTimeFramed() {
 

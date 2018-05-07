@@ -1,4 +1,4 @@
-import {Observable, from} from "rxjs/index";
+import {Observable} from "rxjs";
 
 function multiplyByTen(input) {
     let output = Observable.create(function subscribe(observer) {
@@ -12,7 +12,7 @@ function multiplyByTen(input) {
 }
 
 function myCustomOperator() {
-    let input = from([1, 2, 3, 4]);
+    let input = Observable.from([1, 2, 3, 4]);
     let output = multiplyByTen(input);
     output.subscribe(x => console.log(x));
 }
