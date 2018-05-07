@@ -2,7 +2,7 @@ import {Subject} from "rxjs/Subject";
 
 function mySubject() {
 
-    var subject = new Subject; // 0 is the initial value
+    const subject = new Subject; // 0 is the initial value
 
     subject.subscribe({
         next: (v) => console.log('observerA: ' + v)

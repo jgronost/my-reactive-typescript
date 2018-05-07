@@ -4,9 +4,9 @@ import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/multicast';
 
 function myMulticastObservable() {
-    let source = Observable.from([1, 2, 3]);
-    let subject = new Subject();
-    let multicasted = source.multicast(subject);
+    const source = Observable.from([1, 2, 3]);
+    const subject = new Subject();
+    const multicasted = source.multicast(subject);
 
 // These are, under the hood, `subject.subscribe({...})`:
     multicasted.subscribe({

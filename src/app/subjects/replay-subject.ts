@@ -2,7 +2,7 @@ import {ReplaySubject} from "rxjs/ReplaySubject";
 
 function myReplaySubject() {
 
-    var subject = new ReplaySubject(3); //  buffer 3 values for new subscribers
+    const subject = new ReplaySubject(3); //  buffer 3 values for new subscribers
 
     subject.subscribe({
         next: (v) => console.log('observerA: ' + v)

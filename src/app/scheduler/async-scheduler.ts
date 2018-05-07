@@ -3,7 +3,7 @@ import {Scheduler} from "rxjs/Rx";
 import 'rxjs/add/operator/observeOn'
 
 function myAsyncScheduler() {
-    let observable = Observable.create(function (observer) {
+    const observable = Observable.create(function (observer) {
         observer.next(1);
         observer.next(2);
         observer.next(3);

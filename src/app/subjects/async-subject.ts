@@ -2,7 +2,7 @@ import {AsyncSubject} from "rxjs/AsyncSubject";
 
 function myAsyncSubject() {
 
-    var subject = new AsyncSubject();
+    const subject = new AsyncSubject();
 
     subject.subscribe({
         next: (v) => console.log('observerA: ' + v)
