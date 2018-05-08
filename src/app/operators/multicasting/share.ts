@@ -1,6 +1,9 @@
 import {timer} from "rxjs/observable/timer";
 import {mapTo, share, tap} from "rxjs/operators";
 
+/**
+ * Share source among multiple subscribers.
+ */
 function myShare() {
     //emit value in 1s
     const source = timer(1000);

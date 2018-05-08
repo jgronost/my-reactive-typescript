@@ -3,6 +3,9 @@ import {_throw} from "rxjs/observable/throw";
 import {of} from "rxjs/observable/of";
 import {retry, mergeMap} from "rxjs/operators";
 
+/**
+ * Retry an observable sequence a specific number of times should an error occur.
+ */
 function myRetry() {
     const source = interval(1000);
     const example = source.pipe(

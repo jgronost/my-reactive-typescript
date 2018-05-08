@@ -1,7 +1,9 @@
 import {from} from "rxjs/observable/from";
 import {distinctUntilChanged} from "rxjs/operators";
 
-
+/**
+ * Only emit when the current value is different than the last.
+ */
 function myDistinctUntilChanged() {
     //only output distinct values, based on the last emitted value
     const myArrayWithDuplicatesInARow = from([1, 1, 2, 2,  1, 2]);

@@ -1,12 +1,13 @@
 import {interval} from "rxjs/observable/interval";
 import {map, throttle} from "rxjs/operators";
 
+/**
+ * Emit value only when duration, determined by provided function, has passed.
+ */
 function myThrottle() {
 
-    //emit value every 1 second
     const source = interval(100);
 
-    //when promise resolves emit item from source
     const example = source
         .pipe(
             throttle((val: number) =>

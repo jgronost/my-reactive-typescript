@@ -1,6 +1,9 @@
 import {interval} from "rxjs/observable/interval";
 import {map, withLatestFrom} from "rxjs/operators";
 
+/**
+ * Also provide the last value from another observable.
+ */
 function myWithLatestFrom() {
     // emit every 2s
     const source = interval(2000);

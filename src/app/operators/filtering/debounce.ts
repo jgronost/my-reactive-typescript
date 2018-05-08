@@ -2,6 +2,9 @@ import "rxjs/add/operator/debounceTime"
 import {debounce} from "rxjs/operators";
 import {interval} from "rxjs/observable/interval";
 
+/**
+ * Discard emitted values that take less than the specified time, based on selector function, between output.
+ */
 function myDebounce() {
 
         const input = interval(1100);

@@ -1,6 +1,9 @@
 import {from} from "rxjs/observable/from";
 import {filter} from "rxjs/operators";
 
+/**
+ * Emit values that pass the provided condition.
+ */
 function myFilter() {
     const source = from([1, 2, 3, 4, 5]);
     const example = source.pipe(filter(num => num % 2 === 0));

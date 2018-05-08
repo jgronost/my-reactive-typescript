@@ -2,6 +2,9 @@ import {interval} from "rxjs/observable/interval";
 import {merge} from "rxjs/operators";
 import "rxjs/add/operator/map";
 
+/**
+ * Turn multiple observables into a single observable.
+ */
 function myMerge() {
 
     //emit every 2.5 seconds

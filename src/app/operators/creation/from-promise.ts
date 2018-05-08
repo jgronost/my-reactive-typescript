@@ -2,6 +2,9 @@ import {of} from "rxjs/observable/of";
 import {catchError} from "rxjs/operators";
 import {fromPromise} from "rxjs/observable/fromPromise";
 
+/**
+ * Create observable from promise, emitting result
+ */
 function myFromPromise() {
     //example promise that will resolve or reject based on input
     const myPromise = willReject => {

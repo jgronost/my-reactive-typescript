@@ -1,6 +1,9 @@
 import {of} from "rxjs/observable/of";
 import {every} from "rxjs/operators";
 
+/**
+ * If all values pass predicate before completion emit true, else false.
+ */
 function myEvery() {
 
     of(1, 2, 3, 4, 5)
