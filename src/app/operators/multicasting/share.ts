@@ -3,6 +3,9 @@ import {mapTo, share, tap} from "rxjs/operators";
 
 /**
  * Share source among multiple subscribers.
+ *
+ * In RxJS observables are cold, or unicast by default.
+ * These operators can make an observable hot, or multicast, allowing side-effects to be share among multiple subscribers.
  */
 function myShare() {
     //emit value in 1s
